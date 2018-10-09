@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#cache
+.pytest_cache
+.cache
+.git
+.idea
+pageobjects/temp.py
+
 # C extensions
 *.so
 
