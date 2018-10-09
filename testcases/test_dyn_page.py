@@ -18,6 +18,7 @@ class TestDynPage(unittest.TestCase):
 
     def test_page_images(self):
         page = FirstPage(self.driver)
+        page.print_images_names()
         page.validate_punisher_image()
 
     def tearDown(self):

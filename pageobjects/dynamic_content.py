@@ -23,3 +23,5 @@ class FirstPage:
     def validate_punisher_image(self):
         assert image_check.punisher(self.images)
 
+    def print_images_names(self):
+        assert image_check.images_names(self.images)
