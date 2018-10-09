@@ -14,6 +14,7 @@ class TestWatch(unittest.TestCase):
     def test_page_texts(self):
         page = FirstPage(self.driver)
         page.validate_long_word_exist()
+        page.print_longest_word()
 
     def tearDown(self):
         self.driver.instance.quit()

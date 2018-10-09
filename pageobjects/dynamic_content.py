@@ -13,3 +13,6 @@ class FirstPage:
 
     def validate_long_word_exist(self):
         assert text_check.char_word(self.texts)
+
+    def print_longest_word(self):
+        print(text_check.longest_word(self.texts))

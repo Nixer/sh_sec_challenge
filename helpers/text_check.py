@@ -10,7 +10,7 @@ def char_word(elements):
 def longest_word(elements):
     word = ""
     for e in elements:
-        word_max = max(e.text, key=len)
-        if word_max > word:
+        word_max = max(e.text.split(), key=len)
+        if len(word_max) > len(word):
             word = word_max
     return word
