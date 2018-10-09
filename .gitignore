@@ -9,6 +9,7 @@ __pycache__/
 .git
 .idea
 pageobjects/temp.py
+.gitignore
 
 # C extensions
 *.so

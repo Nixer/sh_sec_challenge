@@ -13,7 +13,7 @@ class TestWatch(unittest.TestCase):
 
     def test_page_texts(self):
         page = FirstPage(self.driver)
-        page.validate_text_is_present()
+        page.validate_long_word_exist()
 
     def tearDown(self):
         self.driver.instance.quit()
