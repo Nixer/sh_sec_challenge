@@ -5,7 +5,7 @@ from values import strings
 from webdriver import Driver
 
 
-class TestWatch(unittest.TestCase):
+class TestDynPage(unittest.TestCase):
 
     def setUp(self):
         self.driver = Driver()
@@ -16,8 +16,13 @@ class TestWatch(unittest.TestCase):
         page.validate_long_word_exist()
         page.print_longest_word()
 
+    def test_page_images(self):
+        page = FirstPage(self.driver)
+        page.validate_punisher_image()
+
     def tearDown(self):
         self.driver.instance.quit()
+
 
 if __name__ == '__main__':
     unittest.main()
